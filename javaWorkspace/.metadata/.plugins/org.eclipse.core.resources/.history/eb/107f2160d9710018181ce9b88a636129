@@ -1,0 +1,7 @@
+package com.loginBackend.controller;
+
+@RestController
+@RequestMapping("/api")
+public class loginController {
+
+}

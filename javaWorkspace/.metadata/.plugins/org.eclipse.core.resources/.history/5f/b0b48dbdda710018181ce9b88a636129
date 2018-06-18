@@ -1,0 +1,25 @@
+package com.loginBackend.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.loginBackend.service.LoginService;
+
+@RestController
+@RequestMapping("/api")
+public class loginController {
+	@Autowired
+	LoginService loginService;
+	
+	 public ResponseEntity<boolean> verifyUser() {
+	        List<User> users = userService.findAllUsers();
+	        if (users.isEmpty()) {
+	            return new ResponseEntity(HttpStatus.NO_CONTENT);
+	            // You many decide to return HttpStatus.NOT_FOUND
+	        }
+	        return new ResponseEntity<List<User>>(users, HttpStatus.OK);
+	    }
+	 
+
+}

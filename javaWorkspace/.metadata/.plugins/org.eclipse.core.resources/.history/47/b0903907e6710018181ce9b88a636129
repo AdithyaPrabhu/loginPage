@@ -1,0 +1,11 @@
+package com.loginBackend.login;
+
+@Service
+public class LoginService {
+	public boolean verifyUser(String userid, String password) {
+		if(userid.equals("prabhu.adithya") && password.equals("HelloWorld")) {
+			return true;
+		}
+		return false;
+	}
+}
