@@ -6,4 +6,6 @@
         <input matInput type="password" placeholder="Password" [(ngModel)]="password" name="userPassword">
     </mat-form-field>
     <button mat-raised-button color="primary" type="submit" (click)="onSubmit()">Submit</button>
+    <button mat-raised-button color="primary" type="submit" (click)="createNewUser()">Create New User</button>
 </form>
+<p *ngIf='apiMessage'>{{apiMessage}}</p>
