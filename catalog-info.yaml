@@ -1,0 +1,10 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: loginPage
+  annotations:
+    github.com/project-slug: AdithyaPrabhu/loginPage
+spec:
+  type: other
+  lifecycle: unknown
+  owner: team-a
