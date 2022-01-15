@@ -6,5 +6,5 @@ metadata:
     github.com/project-slug: AdithyaPrabhu/loginPage
 spec:
   type: other
-  lifecycle: unknown
+  lifecycle: experimental
   owner: team-a
